@@ -1,0 +1,135 @@
+*{
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    padding: 30px;
+}
+h2{
+    color: #e25f4f;
+    text-transform: uppercase;
+    word-spacing: 100px;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+p{
+    color: #777;
+    font-size: 19px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container{
+    text-align: center;
+    width: 20%;
+}
+.image img{
+    height: 10em;
+}
+div.image{ width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    position: relative;
+}
+.pirmas{
+    background-color: #70c0c9;
+}
+div.image.pirmas::before{
+    content: "";
+    position: absolute;
+    top: -28px;
+    left: -28px;
+    border: 5px solid #70c0c9;
+    background-color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+}
+div.image.pirmas::after{
+    content: "1";
+    position: absolute;
+    top: -15px;
+    left: -4px;
+    z-index: 2;
+    font-size: 21px;
+    color:#70c0c9;
+    font-weight: 800;
+}
+.antras{
+    background-color:#4074bd;
+}
+div.image.antras::before{
+    content: "";
+    position: absolute;
+    top: -28px;
+    left: -28px;
+    border: 5px solid #4074bd;
+    background-color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+div.image.antras::after{
+    content: "2";
+    position: absolute;
+    top: -15px;
+    left: -4px;
+    z-index: 2;
+    font-size: 21px;
+    color: #4074bd;
+    font-weight: 800;
+}
+.trecias{
+    background-color: #e05e46;
+}
+div.image.trecias::before{
+    content: "";
+    position: absolute;
+    top: -28px;
+    left: -28px;
+    border: 5px solid #e05e46;
+    background-color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+}
+div.image.trecias::after{
+    content: "3";
+    position: absolute;
+    top: -15px;
+    left: -4px;
+    z-index: 2;
+    font-size: 21px;
+    color: #e05e46;
+    font-weight: 800;
+}
+.ketvirtas{
+    background-color: #919191;
+}
+div.image.ketvirtas::before{
+    content: "";
+    position: absolute;
+    top: -28px;
+    left: -28px;
+    border: 5px solid #919191;
+    background-color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+div.image.ketvirtas::after{
+    content: "4";
+    position: absolute;
+    top: -15px;
+    left: -4px;
+    z-index: 2;
+    font-size: 21px;
+    color:#919191 ;
+    font-weight: 800;
+}
